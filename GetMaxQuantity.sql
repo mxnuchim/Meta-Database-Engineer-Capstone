@@ -1,0 +1,7 @@
+DROP PROCEDURE IF EXISTS GetMaxQuantity;
+DELIMITER $$ 
+CREATE PROCEDURE GetMaxQuantity() 
+BEGIN
+SELECT MAX(Quantity) AS GetMaxQuantity FROM Orders;
+END$$ 
+DELIMITER ; 
